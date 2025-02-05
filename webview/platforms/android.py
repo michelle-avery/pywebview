@@ -362,7 +362,7 @@ def get_cookies(_):
 
 @run_on_ui_thread
 def get_current_url(_):
-    return app.view.getUrl()
+    return app.view.webview.getUrl()
 
 def get_screens():
     logger.warning('Screen information is not supported on Android')
